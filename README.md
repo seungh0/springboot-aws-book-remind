@@ -72,3 +72,10 @@ JPA -> ORM
 ## Date, Calendar 클래스의 문제점
 - 불변 객체가 아님 => 멀티 스레드 환경에서 문제 발생 가능
 - Calendar은 월 값 설계까 잘못 되었음.
+
+## 4장
+### 조회용 프레임워크
+- querydsl, jooq, MyBatis
+- FK의 조인, 복잡한 조건 등으로 인해 이런 Entity 클래스만으로 처리하기 어려워
+조회용 프레임워크를 추가로 사용
+- 등록/수정/삭제는 Spring Data JPA, 조회는 querydsl
